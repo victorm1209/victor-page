@@ -17,40 +17,121 @@ body {
 
 /* Estilo para el encabezado */
 header {
-    background: #333;
+    background: #003366; /* Azul oscuro */
     color: #fff;
-    padding: 10px 0;
+    padding: 15px;
     text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Estilo para el contenido principal */
 main {
     padding: 20px;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-}
-
-/* Estilo para las secciones */
-section {
-    background: #fff;
-    padding: 20px;
+    background: #fff; /* Fondo blanco para el contenido principal */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para las imágenes */
-img {
+/* Estilo para las secciones */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #003366; /* Línea azul bajo el encabezado */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para la sección de diplomados */
+.diplomas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.diploma {
+    flex: 1 1 calc(33.333% - 30px);
+    box-sizing: border-box;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.diploma img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 4px;
+}
+
+.diploma p {
+    margin-top: 10px;
+}
+
+/* Estilo para el formulario de contacto */
+form {
+    display: grid;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background: #003366; /* Azul oscuro */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background: #002244; /* Azul más oscuro */
 }
 
 /* Estilo para el pie de página */
 footer {
-    background: #333;
+    background: #003366; /* Azul oscuro */
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     position: fixed;
     width: 100%;
     bottom: 0;
