@@ -20,7 +20,11 @@
     <main>
         <section id="biografia">
             <h2>Biografía</h2>
-            <p>Hola, soy [Tu Nombre], un profesional en [Tu Campo]. Tengo experiencia en [Breve descripción de tu experiencia y habilidades]. Me apasiona [Tu Pasión o Intereses].</p>
+            <div class="biografia-content">
+                <img src="https://via.placeholder.com/150" alt="Tu Foto" class="biografia-img">
+                <p>Hola, soy [Tu Nombre], un profesional en [Tu Campo]. Tengo experiencia en [Breve descripción de tu experiencia y habilidades]. Me apasiona [Tu Pasión o Intereses].</p>
+                <a href="cv.pdf" class="btn-download" download>Descargar CV</a>
+            </div>
         </section>
         
         <section id="diplomados">
@@ -41,22 +45,36 @@
         
         <section id="contacto">
             <h2>Contacto</h2>
-            <form action="mailto:tuemail@ejemplo.com" method="post" enctype="text/plain">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
+            <div class="contact-info">
+                <p><strong>Email:</strong> tuemail@ejemplo.com</p>
+                <p><strong>Teléfono:</strong> +123 456 7890</p>
+                <p><strong>Ubicación:</strong> Ciudad, País</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/tuperfil" class="social-button facebook" target="_blank" title="Facebook">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                </a>
+                <a href="https://x.com/tuusuario" class="social-button x" target="_blank" title="X">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/X_Logo.svg" alt="X">
+                </a>
+                <a href="https://www.linkedin.com/in/tuusuario" class="social-button linkedin" target="_blank" title="LinkedIn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/tuusuario" class="social-button github" target="_blank" title="GitHub">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/GitHub_logo_2013.svg" alt="GitHub">
+                </a>
+                <a href="https://wa.me/1234567890" class="social-button whatsapp" target="_blank" title="WhatsApp">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                </a>
+                <a href="https://www.instagram.com/tuusuario" class="social-button instagram" target="_blank" title="Instagram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </a>
+                <a href="https://t.me/tuusuario" class="social-button telegram" target="_blank" title="Telegram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+                </a>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
-    </footer>
+    <!-- Eliminado el footer -->
 </body>
 </html>
